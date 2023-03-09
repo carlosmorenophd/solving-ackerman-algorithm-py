@@ -23,6 +23,14 @@ def prepare_folder(path):
         os.makedirs(path)
     
 def get_ackerman(equation, max_iteration, path, explain = False):
+    """Main function to calculate ackerman algorithm create a folder with all results 
+
+    Args:
+        equation (string): equation to calculate on it with format "A(1,0)" 
+        max_iteration (int): number of item to save by every file 
+        path (string): folder to save all result
+        explain (bool, optional): If is True create all file else only save the last result. Defaults to False.
+    """
     start = time.time()
     prepare_folder(path=path)
     i = 0
